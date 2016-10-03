@@ -1,0 +1,5 @@
+body {
+  background-color: gray; }
+  body p {
+    margin: 0 auto;
+    color: red; }

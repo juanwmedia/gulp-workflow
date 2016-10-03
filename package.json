@@ -1,0 +1,16 @@
+{
+  "name": "gulp-dopodcast",
+  "version": "1.0.0",
+  "description": "App de prueba para la serie de vídeos en DOPodcast",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@juanwmedia",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "browser-sync": "^2.17.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
