@@ -9,3 +9,12 @@ body {
         color: $rojo; 
     } 
 } 
+
+main {
+    display: flex;
+    justify-content: center;
+
+    & div {
+        background-color: gray;
+    }
+}
