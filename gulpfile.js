@@ -4,6 +4,7 @@ var uglify = require('gulp-uglify');
 var pump = require('pump');
 var cssnano = require('gulp-cssnano');
 var imagemin = require('gulp-imagemin');
+var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
 
 gulp.task('serve', ['sass'], function() {
@@ -15,6 +16,15 @@ gulp.task('serve', ['sass'], function() {
     gulp.watch("scss/**/*.scss", ['sass']);
     gulp.watch("app/*.html").on('change', browserSync.reload);
 });
+
+gulp.task('autoprefijar', () =>
+    gulp.src('scss/**/*.scss')
+        .pipe(autoprefixer({
+            browsers: ['last 10 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('app/css/'))
+);
 
 gulp.task('optimizar', () =>
     gulp.src('img/*')
@@ -36,6 +46,10 @@ gulp.task('sass', function(){
     return gulp.src('scss/**/*.scss')
         .pipe(sass())
         .pipe(cssnano())
+        .pipe(autoprefixer({
+            browsers: ['last 10 versions'],
+            cascade: false
+        }))
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.stream());
 });
