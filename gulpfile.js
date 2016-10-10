@@ -5,6 +5,7 @@ var pump = require('pump');
 var cssnano = require('gulp-cssnano');
 var imagemin = require('gulp-imagemin');
 var autoprefixer = require('gulp-autoprefixer');
+var htmlmin = require('gulp-htmlmin');
 var browserSync = require('browser-sync').create();
 
 gulp.task('serve', ['sass'], function() {
@@ -15,6 +16,13 @@ gulp.task('serve', ['sass'], function() {
     gulp.watch("app/js/*.js", ["comprimir"]);
     gulp.watch("scss/**/*.scss", ['sass']);
     gulp.watch("app/*.html").on('change', browserSync.reload);
+    gulp.watch("./*.html", ["minificar"]);
+});
+
+gulp.task('minificar', function() {
+  return gulp.src('./*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('app'));
 });
 
 gulp.task('autoprefijar', () =>
