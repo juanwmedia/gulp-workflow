@@ -7,5 +7,5 @@
         console.info(nombre, ', un saludo desde DO Podcast');
     }
 
-    saludar(nombrar('Juan')); 
+    saludar(nombrar('Juan Andrés')); 
 })();

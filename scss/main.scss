@@ -1,20 +1,12 @@
-$color-fondo: gray;
-$rojo: red;
+$color-corporativo: blue;
+$color-acentuado: #999;
 
 body {
-    background-color: $color-fondo;
+    background-color: $color-corporativo;
+}
 
-    & p {
-        margin: 0 auto;
-        color: $rojo;  
-    } 
-} 
 
-main {
-    display: flex;
-    justify-content: center; 
-
-    & div { 
-        background-color: green;
-    }
+header {
+    height: 150px;
+    background-color: $color-corporativo;
 }
