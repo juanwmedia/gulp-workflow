@@ -1,1 +1,18 @@
-body,header{background-color:blue}header{height:150px}
+body {
+  background-color: gray; }
+
+header {
+  height: 150px;
+  background-color: blue;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  header h1 {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white; }
+    header h1 span {
+      color: red; }
