@@ -3,7 +3,7 @@ body {
 
 header {
   height: 150px;
-  background-color: blue;
+  background-color: aqua;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;

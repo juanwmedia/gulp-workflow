@@ -1,5 +1,4 @@
-$color-corporativo: gray;
-$color-acentuado: blue;
+@import 'colores';
 
 body {
     background-color: $color-corporativo;
@@ -7,7 +6,7 @@ body {
 
 header {
     height: 150px;
-    background-color: $color-acentuado;
+    background-color: $verde;
     display: flex;
     justify-content: center;
     align-items: center;
