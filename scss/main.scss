@@ -1,4 +1,5 @@
 @import 'colores';
+@import 'mixins';
 
 body {
     background-color: $color-corporativo;
@@ -20,5 +21,13 @@ header {
             color: red;
         } 
     }
+}
+
+p:first-of-type {
+    @include margen(30px, 50px);
+}
+
+p:last-of-type {
+    @include margen(80px, 120px);
 }
 

@@ -3,7 +3,7 @@ body {
 
 header {
   height: 150px;
-  background-color: aqua;
+  background-color: green;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -16,3 +16,9 @@ header {
     color: white; }
     header h1 span {
       color: red; }
+
+p:first-of-type {
+  margin: 30px 50px; }
+
+p:last-of-type {
+  margin: 80px 120px; }
