@@ -17,6 +17,33 @@ header {
     header h1 span {
       color: red; }
 
+.alerta, .exito, .atencion, .error {
+  padding: 20px;
+  border-radius: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: black;
+  font-family: sans-serif;
+  margin: 10px;
+  box-shadow: 1px 1px 5px black;
+  text-shadow: 1px 1px 1px white; }
+
+.exito {
+  border: 1px solid greenyellow;
+  background-color: lightgreen; }
+
+.atencion {
+  border: 1px solid yellowgreen;
+  background-color: yellow; }
+
+.error {
+  border: 1px solid darkred;
+  background-color: palevioletred; }
+
 p:first-of-type {
   margin: 30px 50px; }
 

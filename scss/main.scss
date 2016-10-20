@@ -23,6 +23,38 @@ header {
     }
 }
 
+// Alertas varias
+.alerta {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: sans-serif;
+    margin: 10px;
+    box-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 1px white;
+}
+
+.exito {
+    @extend .alerta;
+    border: 1px solid greenyellow;
+    background-color: lightgreen;
+}
+
+.atencion {
+    @extend .alerta;
+    border: 1px solid yellowgreen;
+    background-color: yellow;
+}
+
+.error {
+   @extend .alerta;
+   border: 1px solid darkred;
+   background-color: palevioletred; 
+}
+
 p:first-of-type {
     @include margen(30px, 50px);
 }
