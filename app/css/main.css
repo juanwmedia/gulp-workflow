@@ -17,6 +17,20 @@ header {
     header h1 span {
       color: red; }
 
+.container {
+  width: 1960px; }
+
+article {
+  float: left;
+  width: 33.67347%; }
+
+aside {
+  float: right;
+  width: 15.30612%; }
+
+main {
+  padding: 20px; }
+
 .alerta, .exito, .atencion, .error {
   padding: 20px;
   border-radius: 10px;

@@ -23,6 +23,31 @@ header {
     }
 }
 
+$ancho-total: 1960px;
+$padding: 40px;
+
+.container {
+    width: $ancho-total;
+}
+
+article {
+    float: left;
+    width: 660px / $ancho-total * 100%; // porcentaje
+}
+
+aside {
+    float: right;
+    width: 300px / $ancho-total * 100%; // maths!!!
+}
+
+main {
+    @if ($ancho-total <= 1280px) {
+        padding: $padding;
+    } @else {
+        padding: $padding / 2;
+    }
+}
+
 // Alertas varias
 .alerta {
     padding: 20px;
